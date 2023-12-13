@@ -1,0 +1,334 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* header  */
+.nav-item {
+    display: inline;
+    padding: 10px;
+    z-index: 1;
+    position: relative;
+} 
+.nav-item span{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.nav-item :hover span{
+    width: 100%;
+    background-color: rgb(197, 140, 149);
+    border-radius: 25px;  
+   
+}
+.navbar {
+    display: flex;
+}
+.d-inline-block{
+    max-width: 70px;
+}
+.navbar-nav {
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
+}
+.nav-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+header {
+    position: sticky;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(190, 205, 222);
+}
+
+
+.home {
+    background: linear-gradient(rgba(0, 90, 160, 0.6), rgba(0, 2, 0, 0.7)), url("https://img.freepik.com/premium-photo/photography-mountainous-landscapes-with-imposing-waterfalls_883586-18654.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    height: 800px;
+    padding-top: 230px;
+    text-align: center;
+    text-shadow: 2px 2px 2px goldenrod;
+    font-size: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* about page */
+.section2 {
+    background-color: rgb(219, 227, 228);
+    box-shadow: 2px 2px 2px whitesmoke;
+
+}
+
+h2,
+h1,
+h4>#about-us {
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(119, 119, 195);
+    
+}
+
+.para1 {
+    display: flex;
+    max-width: 600px;
+    margin: auto;
+    background-color: rgb(219, 219, 219);
+    border-radius: 10px;
+}
+.card-group {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border: aqua;
+}
+.col:hover{
+    transform: translateY(+7px);
+}
+.row {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+.card-full {
+    display: flex;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px;
+}
+.card-full:hover{
+    transform: translateY(-7px);
+}
+
+.col {
+    padding: 20px;
+    background-color: rgb(145, 193, 225);
+    border-radius: 25px;
+    text-align: center;
+    max-width: 400px;
+}
+.card-img-top {
+    border-radius: 80px;
+    max-width:  200px;
+    height: 200px;  
+}
+
+/* blog page */
+
+.blog-post{
+    margin-left: 50px;
+}
+.blog-title {
+    text-decoration: dashed;
+    text-shadow: 2px 2px 2px rgb(214, 191, 133);
+}
+#blog-content {
+    background-color: rgb(185, 236, 242);
+    background: linear-gradient( rgba(133, 181, 224, 0.7),rgba(128, 201, 221, 0.6));
+}
+video {
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block ;
+    width: 60%;
+    height: 60%;
+    margin: auto;
+}
+.blog-post2{
+   display: flex;
+   gap: 10px;
+   margin-left: 10px;  
+}
+.blog-post2:hover{
+    transform: scale(1.1);
+}
+.blog-title{
+    text-align: center;
+}
+.blog-description{
+    text-align: center;
+}
+
+/* resources page */
+.resources-bg{
+    margin: auto;
+    background: linear-gradient(rgba(122, 217, 244, 0.6), rgba(74, 165, 245, 0.7));
+}
+.activity{
+    display: flex;
+    gap: 25px;
+   margin-left: 30px;
+ 
+}
+.card2{
+    background-color: whitesmoke;
+   text-align: center;
+   overflow-x: hidden;
+   border-radius: 10px 10px 10px;
+   box-shadow: 3px 3px 3px 3px;
+}
+
+/* registor page */
+#Register-form{
+    background-color: blue;
+    background: linear-gradient(rgba(51, 165, 163, 0.7),rgba(122, 217, 244, 0.6));
+}
+.Register-form-container{
+    margin: auto;
+    max-width: 420px;
+    border-radius: 20px;
+    background-color: rgb(132, 224, 224);
+    margin-top: 20px;
+    padding-top: 0px;
+    top: 50px;
+    box-shadow: 0px 3px 5px 3px ;
+}
+.reg-bottom{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    gap: 10px;
+    overflow: auto;
+    
+}
+.img-log{
+    max-width: 420px;
+    border-radius: 10px ;
+}
+input{
+   outline: none; 
+   border: none;
+   border-bottom: 2px solid rgb(73, 115, 198); 
+}
+#comment{
+    max-width: 300px;
+    height: 100px;
+}
+button{
+    width: 50px;    
+}
+.sub{
+    margin-left: 170px;
+}
+
+/* contact page */
+
+.contact-section{
+  
+    background: linear-gradient(rgba(74, 165, 245, 0.7),rgba(122, 217, 244, 0.6));
+}
+.contact-container {
+    display: flex;
+    display: grid;
+    grid-auto-columns: auto;
+    grid-template-columns: auto auto auto;
+    margin-left: 50px;
+}
+
+.fa-solid {
+    font-size: xx-large;
+    transition: 0.5s;
+}
+.fa-solid:hover{
+   
+    transform: translateY(-7px);
+
+}
+.fa-brands{
+    font-size: 25px;
+    padding: 10px;
+}
+.fa-brands:hover{
+    transform: translateY(-7px);
+}
+.all-icons{
+    text-align: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .container{
+        display: flex;
+        flex-flow: column wrap; 
+    }
+    header{
+        display: flex;
+        flex-flow: column wrap; 
+    }
+    .row{
+        display: flex;
+      
+    }
+    .collapse{
+        display: flex;
+      
+
+    }
+    .blog-post2{
+        display: flex;
+        
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .container{
+        display: flex;
+    }
+    header{
+        display: flex;
+        flex-flow: column wrap; 
+    }
+    .row{
+        display: flex;
+        flex-flow: column wrap; 
+    }
+    .collapse{
+        display: flex;
+        flex-flow: column wrap; 
+    }
+    .blog-post2{
+        display: flex;
+        flex-flow: column wrap; 
+    }
+    .card-group{
+        display: flex;
+        flex-flow: column wrap; 
+    }
+         .contact-container{
+            display: flex;
+            flex-flow: column wrap;  
+         }
+    
+   
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
